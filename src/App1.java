@@ -16,7 +16,7 @@ public class App1 {
         person.setLastName(sc.nextLine());
 
         System.out.println("Alamat : ");
-        person.setDomicile(sc.nextLine());
+        person.setDomisili(sc.nextLine());
 
         System.out.println("Bahasa Pemrogramman Terfavorit : ");
         person.setProgrLangFav(sc.nextLine());
@@ -27,7 +27,7 @@ public class App1 {
         //output hasil
         System.out.println("=== Data Diri ===");
         System.out.println("Nama Lengkap : " + person.getNamaLengkap());
-        System.out.println("Alamat : "+ person.getDomicile());
+        System.out.println("Alamat : "+ person.getDomisili());
         System.out.println("Usia : " + person.getUsia());
         System.out.println("Bahasa Pemrogramman Terfaforit : " + person.getProgrLangFav());
 

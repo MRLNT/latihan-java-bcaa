@@ -3,7 +3,7 @@ package model1;
 public class Person {
     private String firstName;
     private String lastName;
-    private String domicile;
+    private String domisili;
     private Integer birthYear;
     private String progrLangFav;
 
@@ -15,16 +15,24 @@ public class Person {
         lastName = lName;
     }
 
-    public void setDomicile(String domicile) {
-        this.domicile = domicile;
+    public String getNamaLengkap(){
+        return firstName + " " + lastName;
     }
 
-    public String getDomicile() {
-        return this.domicile;
+    public void setDomisili(String domicile) {
+        domisili = domicile;
+    }
+
+    public String getDomisili() {
+        return domisili;
     }
 
     public void setBirthYear(Integer bYear){
         birthYear = bYear;
+    }
+
+    public Integer getUsia(){
+        return 2023 - birthYear;
     }
 
     public void setProgrLangFav(String ProgrLangFav) {
@@ -33,14 +41,5 @@ public class Person {
 
     public String getProgrLangFav() {
         return this.progrLangFav;
-    }
-
-    public String getNamaLengkap(){
-        return firstName + " " + lastName;
-    }
-
-    public Integer getUsia(){
-        return 2023 - birthYear;
-    }
-    
+    }    
 }
